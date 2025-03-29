@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# IANDARA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 📌 Descrição do Projeto
+IANDARA é uma plataforma segura e intuitiva projetada para ajudar mulheres a identificar, registrar e compartilhar informações sobre comportamentos de risco e locais inseguros. Utilizando tecnologia de Inteligência Artificial, a solução busca prevenir incidentes e facilitar a tomada de decisões seguras no dia a dia.
 
-In the project directory, you can run:
+## 🎯 Objetivo SMART
+Desenvolver um site seguro e acessível que permita às mulheres registrar comportamentos suspeitos, mapear locais inseguros e compartilhar informações relevantes. O objetivo é garantir uma plataforma intuitiva, com recursos para organização de provas, análise de ameaças por IA e colaboração entre usuárias, promovendo maior segurança e autonomia.
 
-### `npm start`
+## 🚀 Como Executar o Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **1️⃣ Requisitos**
+Antes de rodar o projeto, certifique-se de ter instalado:
+- [Node.js](https://nodejs.org/)
+- Gerenciador de pacotes **npm** ou **yarn**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **2️⃣ Instalando as Dependências**
+No diretório do projeto, rode o seguinte comando:
+```sh
+npm install
+```
 
-### `npm test`
+### **3️⃣ Rodando o Projeto**
+Para iniciar o servidor de desenvolvimento:
+```sh
+npm run start
+```
+O projeto será executado em `http://localhost:3000/`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Estrutura do Projeto
 
-### `npm run build`
+```
+IANDARA/
+│── node_modules/          # Dependências do projeto
+│── public/                # Arquivos estáticos
+│── src/                   # Código-fonte do projeto
+│   │── assets/            # Imagens e ícones
+│   │── components/        # Componentes reutilizáveis
+│   │   ├── footer/
+│   │   ├── header/
+│   │── pages/             # Páginas principais
+│   │   ├── home/
+│   │   ├── login-page/
+│   │   │   ├── components/
+│   │   │   ├── login-page.css
+│   │   │   ├── index.js
+│   │── routes/            # Configuração de rotas
+│   │   ├── route.js
+│   │── index.js           # Ponto de entrada do React
+│   │── index.css          # Estilos globais
+│── package.json          # Dependências e scripts do projeto
+│── README.md             # Documentação do projeto
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔧 Tecnologias Utilizadas
+- **React.js** - Biblioteca JavaScript para criação de interfaces
+- **Sass (SCSS)** - Para estilização modular e eficiente
+- **React Router** - Para navegação entre as páginas
+- **Node.js** - Ambiente de execução para o JavaScript no backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 👥 Alunos
+**Nome de alunos que participaram do projeto:**
+- Alessandra Barbosa
+- Raphael Miranda
+- Rayane Cavalcanti
+- Samuel Araujo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📌 **IANDARA - Mapeamento e Prevenção de Riscos à Segurança da Mulher** 💜
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
