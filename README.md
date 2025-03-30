@@ -7,6 +7,10 @@ IANDARA é uma plataforma segura e intuitiva projetada para ajudar mulheres a id
 ## 🎯 Objetivo SMART
 Desenvolver um site seguro e acessível que permita às mulheres registrar comportamentos suspeitos, mapear locais inseguros e compartilhar informações relevantes. O objetivo é garantir uma plataforma intuitiva, com recursos para organização de provas, análise de ameaças por IA e colaboração entre usuárias, promovendo maior segurança e autonomia.
 
+## 🚀 Quadro Trello
+![image](https://github.com/user-attachments/assets/46184ccb-d222-408b-a133-682727823918)
+**Link:** https://trello.com/b/DqiNJrFd/iandara 
+
 ## 🚀 Como Executar o Projeto
 
 ### **1️⃣ Requisitos**
