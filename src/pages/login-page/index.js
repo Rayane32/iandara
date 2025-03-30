@@ -1,5 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../assets/logo.svg';
+import './login-page.css';
+import Paraph from './components/paraph/index';
+import { NavLink } from 'react-router';
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
         >
           Learn React
         </a>
+
+        <NavLink to='/home'> TELA DOIS </NavLink>
+        
+        <Paraph/>
       </header>
     </div>
   );
