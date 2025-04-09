@@ -11,7 +11,9 @@
 ### **LINNK DE ACESSO:** https://trello.com/b/DqiNJrFd/iandara
 
 
-TELAS DO SISTEMA
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/f1f384cd-d382-44a0-9b7b-fe2968962c5a)
+
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
 ![image](https://github.com/user-attachments/assets/defd67ce-4921-419c-b9dc-c21d2a78cec4)
 - **Figma:** https://www.figma.com/design/EZal2m2CeFjStmOP5HFM0Y/IANDARA?node-id=105-2&p=f&t=hWcoElZOSDOZ84kH-0
