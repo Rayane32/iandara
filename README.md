@@ -29,7 +29,7 @@
 **Edição usuário**
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
 ![image](https://github.com/user-attachments/assets/65d7fe41-d03f-40df-87b7-b55a2b0e2729)
-- **Figma:** https://www.figma.com/design/EZal2m2CeFjStmOP5HFM0Y/IANDARA?node-id=105-3&p=f&t=ZoorUW6imDxlzXna-0
+- **Figma:** https://www.figma.com/design/ReCt8zS45yJHppjN9yJEBl/IANDARA?node-id=0-1&p=f&t=5YwRAYR9viGuddaw-0 
 - **HU Trello:** https://trello.com/c/YX73J3m6
 
 **Home Iandara**
