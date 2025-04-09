@@ -41,7 +41,7 @@
 - **HU** https://trello.com/c/owEmqW1m
 - **HU** https://trello.com/c/GWk9zFB1
 
-**Pessoa Confiança - Cadastro, edição, exclusão**
+**Enviar Localização**
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
 ![image](https://github.com/user-attachments/assets/042f690a-cb99-4cb0-8e58-3f1a59d6c159)
 - **Figma:** https://www.figma.com/design/ReCt8zS45yJHppjN9yJEBl/IANDARA?node-id=1-100&p=f&t=xyHbuacyuRurWy6o-0
