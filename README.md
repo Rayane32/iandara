@@ -8,7 +8,7 @@
 ![image](https://github.com/user-attachments/assets/ab845ebc-0c0d-4cc4-88b1-c32543c10e16)
 ![image](https://github.com/user-attachments/assets/43435b80-6441-4ee6-877f-847912777192)
 
-### **LINNK DE ACESSO:** https://trello.com/b/DqiNJrFd/iandara
+- **LINNK DE ACESSO:** https://trello.com/invite/b/66f52220680ce266c87e6362/ATTIeed9ff5fe990e0252c4a20961fc9cdbaF29034CC/iandara
 
 
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
