@@ -1,17 +1,54 @@
-# IANDARA
+![image](https://github.com/user-attachments/assets/972ff49d-949c-46f6-a572-ffc8ae6eb444)
+![image](https://github.com/user-attachments/assets/54d190b1-682f-4e07-bf9d-ffd2334bb67e)
+![image](https://github.com/user-attachments/assets/0e83a189-2ec3-49f5-9193-8a7075b225b1)
+![image](https://github.com/user-attachments/assets/b91fc256-15f0-49a3-92b3-fbfcc07ac43d)
 
 
-## 📌 Descrição do Projeto
-IANDARA é uma plataforma segura e intuitiva projetada para ajudar mulheres a identificar, registrar e compartilhar informações sobre comportamentos de risco e locais inseguros. Utilizando tecnologia de Inteligência Artificial, a solução busca prevenir incidentes e facilitar a tomada de decisões seguras no dia a dia.
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/ab845ebc-0c0d-4cc4-88b1-c32543c10e16)
+![image](https://github.com/user-attachments/assets/43435b80-6441-4ee6-877f-847912777192)
 
-## 🎯 Objetivo SMART
-Desenvolver um site seguro e acessível que permita às mulheres registrar comportamentos suspeitos, mapear locais inseguros e compartilhar informações relevantes. O objetivo é garantir uma plataforma intuitiva, com recursos para organização de provas, análise de ameaças por IA e colaboração entre usuárias, promovendo maior segurança e autonomia.
+### **LINNK DE ACESSO:** https://trello.com/b/DqiNJrFd/iandara
 
-## 🚀 Quadro Trello
-![image](https://github.com/user-attachments/assets/46184ccb-d222-408b-a133-682727823918)
-**Link:** https://trello.com/b/DqiNJrFd/iandara 
 
-## 🚀 Como Executar o Projeto
+TELAS DO SISTEMA
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/defd67ce-4921-419c-b9dc-c21d2a78cec4)
+- **Figma:** https://www.figma.com/design/EZal2m2CeFjStmOP5HFM0Y/IANDARA?node-id=105-2&p=f&t=hWcoElZOSDOZ84kH-0
+- **HU Trello:** https://trello.com/c/CvqAaiWS
+
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/44071277-e522-4e60-89ae-7aff4ef4e24f)
+- **Figma:** https://www.figma.com/design/EZal2m2CeFjStmOP5HFM0Y/IANDARA?node-id=105-3&p=f&t=ZoorUW6imDxlzXna-0
+- **HU Trello:** https://trello.com/c/UovrfylG
+
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/65d7fe41-d03f-40df-87b7-b55a2b0e2729)
+- **Figma:** https://www.figma.com/design/EZal2m2CeFjStmOP5HFM0Y/IANDARA?node-id=105-3&p=f&t=ZoorUW6imDxlzXna-0
+- **HU Trello:** https://trello.com/c/YX73J3m6
+
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/78b8a7b7-72f3-4ecf-b22a-57dfd413cc8c)
+- **Figma:** https://www.figma.com/design/ReCt8zS45yJHppjN9yJEBl/IANDARA?node-id=1-50&p=f&t=hdjfINt1CtaW3vHs-0
+#### **HUs Relacionadas Trello:** 
+- **HU** https://trello.com/c/GruPd9N1
+- **HU** https://trello.com/c/owEmqW1m
+- **HU** https://trello.com/c/GWk9zFB1
+
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/042f690a-cb99-4cb0-8e58-3f1a59d6c159)
+- **Figma:** https://www.figma.com/design/ReCt8zS45yJHppjN9yJEBl/IANDARA?node-id=1-100&p=f&t=xyHbuacyuRurWy6o-0
+#### **HUs Relacionadas Trello:** 
+- **HU Trello:** https://trello.com/c/NnH3tBWv
+- **HU Trello:** https://trello.com/c/FV56UaZz
+- **HU Trello:** https://trello.com/c/ESk66XfD
+- **HU Trello:** https://trello.com/c/ectS0g37
+
+
+
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/1fce5788-cf11-4e2e-bd9e-659caa72fe64)
+
 
 ### **1️⃣ Requisitos**
 Antes de rodar o projeto, certifique-se de ter instalado:
@@ -31,7 +68,10 @@ npm run start
 ```
 O projeto será executado em `http://localhost:3000/`.
 
-## 📁 Estrutura do Projeto
+
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/6ab39a64-3434-458d-8329-ac34b40911ca)
+
 
 ```
 IANDARA/
@@ -55,14 +95,19 @@ IANDARA/
 │── package.json          # Dependências e scripts do projeto
 │── README.md             # Documentação do projeto
 ```
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/644a8c68-1449-4912-8b7c-e9ced368d14d)
 
-## 🔧 Tecnologias Utilizadas
 - **React.js** - Biblioteca JavaScript para criação de interfaces
 - **Sass (SCSS)** - Para estilização modular e eficiente
 - **React Router** - Para navegação entre as páginas
 - **Node.js** - Ambiente de execução para o JavaScript no backend
 
-## 👥 Alunos
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/596575bc-9b93-45b7-a0e2-d98f84cd41a9)
+
+
+
 **Nome de alunos que participaram do projeto:**
 - Alessandra Barbosa
 - Raphael Miranda
