@@ -1,0 +1,17 @@
+.header{
+    background-color: var(--orange-2);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.imagesLogo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 2rem;
+}
+.imagesLogo img{
+    height: 3.25rem;
+   
+}
