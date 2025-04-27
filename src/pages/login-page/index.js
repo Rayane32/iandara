@@ -18,6 +18,7 @@ function App() {
         </a>
 
         <NavLink to='/home'> TELA DOIS </NavLink>
+        <NavLink to='/cadastro'> TELA cadastro </NavLink>
         
         <Paraph/>
       </header>

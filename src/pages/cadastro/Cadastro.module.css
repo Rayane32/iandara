@@ -1,0 +1,55 @@
+.boxInicial{
+    display: flex;
+    justify-content: center;
+}
+
+.boxSecundario{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 3rem 0rem;
+    gap: 1.25rem;
+    
+}
+
+.boxSecundario strong{
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: var(--orange-1);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boxCaixa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16rem;
+}
+.box button[type=submit]{
+    height: 5rem;
+    width: 28rem;
+    font-size: 2rem;
+    border-radius: 8px;
+    border: 0;
+    background: var(--orange-2);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box{
+    width: 116rem;
+    height: 52rem;
+    padding: 2rem 0rem 2rem 0rem;
+    gap: 6rem;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxDentro{
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+}
