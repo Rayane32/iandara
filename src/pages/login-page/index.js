@@ -1,5 +1,3 @@
-import logo from '../../assets/logo.svg';
-import './login-page.css';
 import Paraph from './components/paraph/index';
 import { NavLink } from 'react-router';
 
@@ -7,7 +5,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -21,6 +18,7 @@ function App() {
         </a>
 
         <NavLink to='/home'> TELA DOIS </NavLink>
+        <NavLink to='/cadastro'> TELA cadastro </NavLink>
         
         <Paraph/>
       </header>
