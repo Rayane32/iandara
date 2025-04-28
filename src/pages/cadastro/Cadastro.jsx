@@ -1,4 +1,4 @@
-import styles from './Cadastro.module.css';
+import styles from './Cadastro.module.scss';
 import { CaixaTextoCadastro } from '../../componentes/CaixaTextoCadastro/CaixaTextoCadastro';
 
 function Cadastro(){
@@ -10,16 +10,16 @@ function Cadastro(){
                     <div className={styles.box}>
                         <div className={styles.boxCaixa}>
                             <div className={styles.boxDentro}>
-                                <CaixaTextoCadastro apelidoCaixa="NOME"/>
-                                <CaixaTextoCadastro apelidoCaixa="CPF"/>
-                                <CaixaTextoCadastro apelidoCaixa="ENDEREÇO" hasAsterisco={false}/>
-                                <CaixaTextoCadastro apelidoCaixa="CIDADE" hasAsterisco={false}/>
+                                <CaixaTextoCadastro apelidoCaixa="Nome:"/>
+                                <CaixaTextoCadastro apelidoCaixa="CPF:"/>
+                                <CaixaTextoCadastro apelidoCaixa="Endereço:" hasAsterisco={false}/>
+                                <CaixaTextoCadastro apelidoCaixa="Cidade:" hasAsterisco={false}/>
                             </div>
                             <div className={styles.boxDentro}>
-                                <CaixaTextoCadastro apelidoCaixa="DATA DE NASCIMENTO" hasAsterisco={false}/>
-                                <CaixaTextoCadastro apelidoCaixa="EMAIL"/>
-                                <CaixaTextoCadastro apelidoCaixa="SENHA"/>
-                                <CaixaTextoCadastro apelidoCaixa="CONFIRMAR SENHA"/>
+                                <CaixaTextoCadastro apelidoCaixa="Data de nascimento:" hasAsterisco={false}/>
+                                <CaixaTextoCadastro apelidoCaixa="E-mail:"/>
+                                <CaixaTextoCadastro apelidoCaixa="Senha:"/>
+                                <CaixaTextoCadastro apelidoCaixa="Confirmar senha:"/>
                             </div>
                         </div> 
                         <button type="submit">Cadastrar</button>

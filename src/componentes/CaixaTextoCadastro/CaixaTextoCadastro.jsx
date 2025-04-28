@@ -1,4 +1,4 @@
-import style from './CaixaTextoCadastro.module.css';
+import style from './CaixaTextoCadastro.module.scss';
 
 export function CaixaTextoCadastro({apelidoCaixa, hasAsterisco = true}){
     return(
