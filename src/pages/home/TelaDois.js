@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router';
 import emailjs from "@emailjs/browser";
+import Form from './components/button/index';
 
 function TelaDois() {
   const sendEmail = () => {
@@ -20,15 +21,28 @@ function TelaDois() {
     })
   }
 
-  return (
+  const teste = (
     <div>
       <h1>TELA DOIS - HOME</h1>
       <NavLink to='/login-page'> HOME </NavLink>
       <button onClick={sendEmail} type="text">
-        BT
+        BTttttt
       </button>
+<br/>
+      <Form/>
      </div>
-  );
+  )
+  return teste;
+
+  // return (
+  //   // <div>
+  //   //   <h1>TELA DOIS - HOME</h1>
+  //   //   <NavLink to='/login-page'> HOME </NavLink>
+  //   //   <button onClick={sendEmail} type="text">
+  //   //     BT
+  //   //   </button>
+  //   //  </div>
+  // );
 }
 
 export default TelaDois;
