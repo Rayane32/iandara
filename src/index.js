@@ -11,6 +11,5 @@ root.render(
   <div>
     <Header/>
     <RouteList/>
-    Footer
   </div>
 );
