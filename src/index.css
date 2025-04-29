@@ -1,4 +1,4 @@
-:root{
+:root {
   --white: #ffffff;
 
   --orange-1: #D06123;
@@ -7,7 +7,25 @@
   --green-1: #19403F;
 
   --red-1: #FF0000;
-  
+
+  button {
+    display: flex;
+    align-items: center;
+
+    padding: 15px 35px;
+    border-radius: 8px;
+    border: 0;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 80%;
+  }
 }
 
 body {
