@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './Cadastro.module.scss';
-import { Footer } from '../../componentes/Footer/Footer';
+import { Header } from '../../componentes/header/Header';
 
 import { useNavigate } from 'react-router';
 
@@ -127,11 +127,12 @@ function Cadastro() {
     };
 
     const handleClick = () => {
-        navigate('/login-page');
+        navigate('/Login');
     }
 
     return (
         <div>
+            <Header />
             <main>
                 <div className={styles.formUser}>
                     <div className={styles.formUserContent}>
@@ -157,7 +158,6 @@ function Cadastro() {
                     </div>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }

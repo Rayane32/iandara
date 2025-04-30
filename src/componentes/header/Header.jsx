@@ -1,4 +1,4 @@
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 
 import iandaraLogo from '../../assets/iandaraLogo.svg';
 import iandaraLogotipo from '../../assets/iandaraLogotipo.svg';
