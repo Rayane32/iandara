@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/iandara/static/css/main.e1294c00.css",
+    "main.js": "/iandara/static/js/main.e0e684fa.js",
+    "static/media/logoLogin.svg": "/iandara/static/media/logoLogin.fbaf8ff8e9a26a645083e671eb502965.svg",
+    "static/media/iandaraLogo.svg": "/iandara/static/media/iandaraLogo.e6c17f2e1fce55fb6922c9c7a6614f9e.svg",
+    "static/media/iandaraLogotipo.svg": "/iandara/static/media/iandaraLogotipo.90017c76631f57c318f8c6daf9686547.svg",
+    "static/media/edit-icon.svg": "/iandara/static/media/edit-icon.488d1b99d177b0149ceffb3ddad3f622.svg",
+    "index.html": "/iandara/index.html",
+    "main.e1294c00.css.map": "/iandara/static/css/main.e1294c00.css.map",
+    "main.e0e684fa.js.map": "/iandara/static/js/main.e0e684fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1294c00.css",
+    "static/js/main.e0e684fa.js"
+  ]
+}
