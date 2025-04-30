@@ -26,6 +26,12 @@
   button:hover {
     opacity: 80%;
   }
+
+  input:disabled {
+    opacity: 80%;
+    background-color: #f0f0f0 !important;
+    cursor: not-allowed;
+  }
 }
 
 body {

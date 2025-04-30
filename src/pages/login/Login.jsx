@@ -73,57 +73,61 @@ function Login() {
 
   return (
     <main className={styles.boxPrincipal}>
-        <div className={styles.ladoVerde}>
-            <img src={logoLogin} alt="" />
+      <div className={styles.ladoVerde}>
+        <img src={logoLogin} alt="" />
+      </div>
+      <div className={styles.ladoForm}>
+        <div>
+          <label className={styles.firstLabel}> Login </label>
         </div>
-        <div className={styles.ladoForm}>
-            <div>
-              <label className={styles.firstLabel}> Login </label>
-            </div>
-            <form onSubmit={handleSubmit} className={styles.loginForm}>
-            <div className={styles.formItens}>
-                <label className={styles.labelLogin}>E-mail</label>
-                <input
+        <form onSubmit={handleSubmit} className={styles.loginForm}>
+          <div className={styles.formItens}>
+            <div className={styles.form}>
+              <label className={styles.labelLogin}>E-mail</label>
+              <input
                 type="text"
                 value={form.email}
                 onChange={handleChange('email')}
                 onBlur={() => validarCampo('email', form.email)}
-                />
-                {erros.email && <span className={styles.erro}>{erros.email}</span>}
+              />
             </div>
+            {erros.email && <span className={styles.erro}>{erros.email}</span>}
+          </div>
 
-            <div className={styles.formItens}>
-                <label className={styles.labelLogin}>Senha</label>
-                <input
+          <div className={styles.formItens}>
+            <div className={styles.form}>
+              <label className={styles.labelLogin}>Senha</label>
+              <input
                 type="password"
                 value={form.senha}
                 onChange={handleChange('senha')}
                 onBlur={() => validarCampo('senha', form.senha)}
-                />
-                {erros.senha && <span className={styles.erro}>{erros.senha}</span>}
+              />
             </div>
-            </form>
-            <div>
-              <label className={styles.checkboxLogin}>
-                <input
-                  type="checkbox"
-                  checked={checked}
-                  onChange={() => setChecked(!checked)}
-                />
-                <span className={styles.checkboxLabel}>Manter-me conectado</span>
-              </label>
-            </div>
-            <button type="submit">Entrar</button>
-            <div className={styles.linksLogin}>
-              <button type="submit" >Esqueceu a senha?</button>
-              <button type="submit" onClick={handleClick}>Cadastrar</button>
-                {/*<a href="#" onClick={handleClick}>Esqueceu a senha?</a>
-                <a href="#" onClick={handleClick}>Cadastrar</a>*/}
-            </div>
+            {erros.senha && <span className={styles.erro}>{erros.senha}</span>}
+          </div>
+        </form>
+        <div>
+          <label className={styles.checkboxLogin}>
+            <input
+              type="checkbox"
+              checked={checked}
+              onChange={() => setChecked(!checked)}
+            />
+            <span className={styles.checkboxLabel}>Manter-me conectado</span>
+          </label>
         </div>
+        <button type="submit">Entrar</button>
+        <div className={styles.linksLogin}>
+          <button type="submit" >Esqueceu a senha?</button>
+          <button type="submit" onClick={handleClick}>Cadastrar</button>
+          {/*<a href="#" onClick={handleClick}>Esqueceu a senha?</a>
+                <a href="#" onClick={handleClick}>Cadastrar</a>*/}
+        </div>
+      </div>
 
     </main>
-    
+
   );
 }
 
