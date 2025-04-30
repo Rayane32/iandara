@@ -3,8 +3,6 @@ import styles from './Login.module.scss';
 
 import { useNavigate } from 'react-router';
 
-
-
 import logoLogin from '../../assets/logoLogin.svg';
 
 function Login() {
@@ -15,6 +13,8 @@ function Login() {
   });
 
   const [erros, setErros] = useState({});
+
+  const [mostrarSenha, setMostrarSenha] = useState(false);
 
   const regexValidacoes = {
     email: /^[\w.-]+@[a-zA-Z\d-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$/,
@@ -56,13 +56,19 @@ function Login() {
       if (!valor || (regexValidacoes[campo] && !regexValidacoes[campo].test(valor))) {
         hasErro = true;
       }
+
+      if (form[campo] && !valor) {
+        hasErro = true;
+      }
     });
 
     if (!hasErro) {
       alert('Login efetuado com sucesso!');
+      navigate('/home');
     } else {
       alert('Preencha os campos corretamente.');
     }
+
   };
 
   const handleClick = () => {
@@ -80,6 +86,7 @@ function Login() {
         <div>
           <label className={styles.firstLabel}> Login </label>
         </div>
+
         <form onSubmit={handleSubmit} className={styles.loginForm}>
           <div className={styles.formItens}>
             <div className={styles.form}>
@@ -98,15 +105,23 @@ function Login() {
             <div className={styles.form}>
               <label className={styles.labelLogin}>Senha</label>
               <input
-                type="password"
+                type={mostrarSenha ? 'text' : 'password'}
                 value={form.senha}
                 onChange={handleChange('senha')}
                 onBlur={() => validarCampo('senha', form.senha)}
               />
+
+              <div className={styles.iconeInput}>
+                <span onClick={() => setMostrarSenha(!mostrarSenha)} className="material-icons">
+                  {mostrarSenha ? 'visibility_off' : 'visibility'}
+                </span>
+              </div>
+
             </div>
             {erros.senha && <span className={styles.erro}>{erros.senha}</span>}
           </div>
         </form>
+
         <div>
           <label className={styles.checkboxLogin}>
             <input
@@ -117,12 +132,11 @@ function Login() {
             <span className={styles.checkboxLabel}>Manter-me conectado</span>
           </label>
         </div>
-        <button type="submit">Entrar</button>
+
+        <button onClick={handleSubmit}>Entrar</button>
         <div className={styles.linksLogin}>
-          <button type="submit" >Esqueceu a senha?</button>
-          <button type="submit" onClick={handleClick}>Cadastrar</button>
-          {/*<a href="#" onClick={handleClick}>Esqueceu a senha?</a>
-                <a href="#" onClick={handleClick}>Cadastrar</a>*/}
+          <button>Esqueceu a senha?</button>
+          <button onClick={handleClick}>Cadastrar</button>
         </div>
       </div>
 

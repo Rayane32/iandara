@@ -18,6 +18,8 @@ function Cadastro() {
         confirmarSenha: '',
     });
 
+    const [mostrarSenha, setMostrarSenha] = useState(false);
+
     const mapeadorCampos = {
         nome: "Nome:",
         nascimento: "Data de nascimento:",
@@ -88,8 +90,9 @@ function Cadastro() {
         "confirmarSenha",
     ];
 
-    const renderCampo = (label, campo, type = 'text') => (
-        <div className={styles.formItens}>
+    const renderCampo = (label, campo, type = 'text', index) => (
+
+        <div className={styles.formItens} key={index}>
             <div className={styles.form}>
                 <label>{label} {camposObrigatorios.includes(campo) && <span className={styles.asterisco}>*</span>}</label>
                 <input
@@ -98,6 +101,13 @@ function Cadastro() {
                     onChange={handleChange(campo)}
                     onBlur={() => validarCampo(campo, form[campo])}
                 />
+
+                {(campo === 'senha' || campo === 'confirmarSenha') &&
+                    <div className={styles.iconeInput}>
+                        <span onClick={() => setMostrarSenha(!mostrarSenha)} className="material-icons">
+                            {mostrarSenha ? 'visibility_off' : 'visibility'}
+                        </span>
+                    </div>}
             </div>
             {erros[campo] && <span className={styles.erro}>{erros[campo]}</span>}
         </div>
@@ -109,9 +119,11 @@ function Cadastro() {
         let hasErro = false;
         Object.entries(form).forEach(([campo, valor]) => {
             validarCampo(campo, valor);
+
             if (campo !== 'confirmarSenha' && regexValidacoes[campo] && !regexValidacoes[campo].test(valor)) {
                 hasErro = true;
             }
+
             if (campo === 'confirmarSenha' && valor !== form.senha) {
                 hasErro = true;
             }
@@ -119,6 +131,7 @@ function Cadastro() {
 
         if (!hasErro) {
             alert('Formulário enviado com sucesso!');
+            navigate('/home');
         }
 
         if (hasErro) {
@@ -140,8 +153,8 @@ function Cadastro() {
                         <form onSubmit={handleSubmit} className={styles.box}>
                             <div className={styles.formContainer}>
                                 {
-                                    Object.keys(mapeadorCampos).map((campo) => {
-                                        return renderCampo(mapeadorCampos[campo], campo, campo.includes('senha') ? 'password' : 'text')
+                                    Object.keys(mapeadorCampos).map((campo, index) => {
+                                        return renderCampo(mapeadorCampos[campo], campo, (campo.includes('senha') || campo.includes('confirmarSenha')) && !mostrarSenha ? 'password' : 'text', index)
                                     })
                                 }
                             </div>

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import Login from "../pages/login/Login"
-import TelaDois from "../pages/home/TelaDois";
+import Home from "../pages/home/Home";
 import Cadastro from "../pages/cadastro/Cadastro";
 import EdicaoUsuario from "../pages/edicao-usuario/EdicaoUsuario";
 
@@ -9,7 +9,7 @@ const RouteList = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/login" element={<Login />} />
-                <Route path="/home" element={<TelaDois />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/cadastro" element={<Cadastro />} />
                 <Route path="/edicao/usuario" element={<EdicaoUsuario />} />
                 <Route path="*" element={<Navigate to="/login" replace />} />

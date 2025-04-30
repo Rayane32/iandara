@@ -45,6 +45,8 @@
                     flex-direction: column;
                     gap: 14px;
 
+                    position: relative;
+
                     input {
                         height: 3rem;
                         width: 21rem;
@@ -74,7 +76,15 @@
                         font-weight: bold;
                     }
 
+                    .iconeInput {
+                        width: 35px;
+                        height: 36px;
 
+                        position: absolute;
+                        bottom: 0px;
+                        right: 14px;
+                        cursor: pointer;
+                    }
                 }
 
                 .erro {

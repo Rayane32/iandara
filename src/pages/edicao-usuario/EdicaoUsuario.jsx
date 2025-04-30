@@ -1,11 +1,14 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router';
 import styles from './Edicao.module.scss';
+
 import { Header } from '../../componentes/header/Header';
 
 import EditIcon from "../../assets/edit-icon.svg";
 import LockIcon from "../../assets/lock-icon.png"
 
 function Edicao() {
+    const navigate = useNavigate()
 
     const [form, setForm] = useState({
         nome: 'Ana Clara Silva',
@@ -53,8 +56,6 @@ function Edicao() {
                 prev.confirmarSenha = '';
             }
 
-            console.log('campo, valor', campo, valor)
-
             return { ...prev, [campo]: valor }
         });
 
@@ -73,7 +74,6 @@ function Edicao() {
         }
 
         if (campo === 'nome' || campo === 'cpf' || campo === 'email' || campo === 'senha' || campo === 'confirmarSenha') {
-            console.log('valor', valor);
             if (!valor) {
                 erro = `Campo obrigatório.`;
             }
@@ -113,9 +113,15 @@ function Edicao() {
         let hasErro = false;
         Object.entries(form).forEach(([campo, valor]) => {
             validarCampo(campo, valor);
+
+            if (camposObrigatorios.includes(campo) && !valor) {
+                hasErro = true;
+            }
+
             if (campo !== 'confirmarSenha' && regexValidacoes[campo] && !regexValidacoes[campo].test(valor)) {
                 hasErro = true;
             }
+
             if (campo === 'confirmarSenha' && valor !== form.senha) {
                 hasErro = true;
             }
@@ -123,6 +129,7 @@ function Edicao() {
 
         if (!hasErro) {
             alert('Dados atualizados com sucesso!');
+            navigate('/home');
         }
 
         if (hasErro) {
@@ -141,7 +148,7 @@ function Edicao() {
                             <div className={styles.formContainer}>
                                 {
                                     Object.keys(mapeadorCampos).map((campo, index) => {
-                                        return renderCampo(mapeadorCampos[campo], campo, campo.includes('senha', 'confirmarSenha') ? 'password' : 'text', index)
+                                        return renderCampo(mapeadorCampos[campo], campo, index)
                                     })
                                 }
                             </div>

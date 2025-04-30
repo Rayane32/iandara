@@ -1,10 +1,11 @@
-.formUser{
+.formUser {
     height: 100vh;
 }
+
 .formUser {
     display: flex;
     justify-content: center;
-    
+
 
     .formUserContent {
         display: flex;
@@ -70,11 +71,11 @@
                             resize: none;
                             font-size: 1rem;
 
-                            border: 2px solid transparent; // reserva espaço sem visibilidade
+                            border: 2px solid transparent;
                         }
 
                         input:focus-visible {
-                            border: 2px solid var(--green-1); // agora não aumenta o tamanho
+                            border: 2px solid var(--green-1);
                             outline: transparent;
                         }
 
@@ -82,6 +83,16 @@
                             color: red;
                             margin-left: 2px;
                             font-weight: bold;
+                        }
+
+                        .iconeInput {
+                            width: 35px;
+                            height: 36px;
+
+                            position: absolute;
+                            bottom: 0px;
+                            right: 14px;
+                            cursor: pointer;
                         }
                     }
 
