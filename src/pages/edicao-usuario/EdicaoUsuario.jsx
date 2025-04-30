@@ -1,24 +1,25 @@
 import { useState } from 'react';
-import styles from './Cadastro.module.scss';
+import { useNavigate } from 'react-router';
+import styles from './Edicao.module.scss';
+
 import { Header } from '../../componentes/header/Header';
 
-import { useNavigate } from 'react-router';
+import EditIcon from "../../assets/edit-icon.svg";
+import LockIcon from "../../assets/lock-icon.png"
 
-function Cadastro() {
+function Edicao() {
     const navigate = useNavigate()
 
     const [form, setForm] = useState({
-        nome: '',
-        cpf: '',
-        nascimento: '',
-        email: '',
-        endereco: '',
-        senha: '',
-        cidade: '',
-        confirmarSenha: '',
+        nome: 'Ana Clara Silva',
+        cpf: '123.456.784-91',
+        nascimento: '19/07/2002',
+        email: 'anaclarasilva@gmail.com',
+        endereco: 'Rua da moeda 123, Recife.',
+        senha: 'anaclara',
+        cidade: 'Recife',
+        confirmarSenha: 'anaclara',
     });
-
-    const [mostrarSenha, setMostrarSenha] = useState(false);
 
     const mapeadorCampos = {
         nome: "Nome:",
@@ -33,7 +34,6 @@ function Cadastro() {
     const [erros, setErros] = useState({});
 
     const regexValidacoes = {
-        cpf: /^\d{3}\.?\d{3}\.?\d{3}-?\d{2}$/,
         email: /^[\w.-]+@[a-zA-Z\d-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$/,
     };
 
@@ -91,7 +91,6 @@ function Cadastro() {
     ];
 
     const renderCampo = (label, campo, type = 'text', index) => (
-
         <div className={styles.formItens} key={index}>
             <div className={styles.form}>
                 <label>{label} {camposObrigatorios.includes(campo) && <span className={styles.asterisco}>*</span>}</label>
@@ -100,14 +99,9 @@ function Cadastro() {
                     value={form[campo]}
                     onChange={handleChange(campo)}
                     onBlur={() => validarCampo(campo, form[campo])}
+                    disabled={campo === 'cpf' || campo === 'nascimento'}
                 />
-
-                {(campo === 'senha' || campo === 'confirmarSenha') &&
-                    <div className={styles.iconeInput}>
-                        <span onClick={() => setMostrarSenha(!mostrarSenha)} className="material-icons">
-                            {mostrarSenha ? 'visibility_off' : 'visibility'}
-                        </span>
-                    </div>}
+                <img src={campo === 'cpf' || campo === 'nascimento' ? LockIcon : EditIcon} alt="" className={styles.iconeInput} />
             </div>
             {erros[campo] && <span className={styles.erro}>{erros[campo]}</span>}
         </div>
@@ -120,6 +114,10 @@ function Cadastro() {
         Object.entries(form).forEach(([campo, valor]) => {
             validarCampo(campo, valor);
 
+            if (camposObrigatorios.includes(campo) && !valor) {
+                hasErro = true;
+            }
+
             if (campo !== 'confirmarSenha' && regexValidacoes[campo] && !regexValidacoes[campo].test(valor)) {
                 hasErro = true;
             }
@@ -130,18 +128,14 @@ function Cadastro() {
         });
 
         if (!hasErro) {
-            alert('Formulário enviado com sucesso!');
+            alert('Dados atualizados com sucesso!');
             navigate('/home');
         }
 
         if (hasErro) {
-            alert('Preencha os obrigatórios e de forma válida.');
+            alert('Preencha os obrigatórios e de forma válida para salvar edições.');
         }
     };
-
-    const handleClick = () => {
-        navigate('/login');
-    }
 
     return (
         <div>
@@ -149,23 +143,18 @@ function Cadastro() {
             <main>
                 <div className={styles.formUser}>
                     <div className={styles.formUserContent}>
-                        <strong>Dados cadastrais</strong>
+                        <strong>Meus dados</strong>
                         <form onSubmit={handleSubmit} className={styles.box}>
                             <div className={styles.formContainer}>
                                 {
                                     Object.keys(mapeadorCampos).map((campo, index) => {
-                                        return renderCampo(mapeadorCampos[campo], campo, (campo.includes('senha') || campo.includes('confirmarSenha')) && !mostrarSenha ? 'password' : 'text', index)
+                                        return renderCampo(mapeadorCampos[campo], campo, index)
                                     })
                                 }
                             </div>
 
                             <div className={styles.footerButtons}>
-                                <button className={styles.greenBnt} type="button" onClick={handleClick}>
-                                    <span className="material-icons">arrow_back</span>
-                                    Tela de Login
-                                </button>
-
-                                <button type="submit">Cadastrar</button>
+                                <button type="submit">Salvar</button>
                             </div>
                         </form>
                     </div>
@@ -175,4 +164,4 @@ function Cadastro() {
     );
 }
 
-export default Cadastro;
+export default Edicao;

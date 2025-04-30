@@ -2,102 +2,116 @@
     display: flex;
     flex-direction: row;
     height: 100vh;
-  }
-.ladoVerde{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--green-1);
 
-    
+    .ladoVerde {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--green-1);
+    }
+
+    .ladoVerde img {
+        height: 368px;
+    }
+
+    .ladoForm {
+        padding: 20px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
+
+        .ladoForm label {
+            color: var(--green-1);
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .firstLabel {
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+
+        .loginForm {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .formItens {
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 14px;
+
+                    position: relative;
+
+                    input {
+                        height: 3rem;
+                        width: 21rem;
+
+                        align-content: center;
+                        border: 0;
+                        border-radius: 10px;
+
+                        background: var(--white);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                        padding: 0rem 2rem 0rem 2rem;
+                        resize: none;
+                        font-size: 1rem;
+
+                        border: 2px solid transparent;
+                    }
+
+                    input:focus-visible {
+                        border: 2px solid var(--green-1);
+                        outline: transparent;
+                    }
+
+                    .asterisco {
+                        color: red;
+                        margin-left: 2px;
+                        font-weight: bold;
+                    }
+
+                    .iconeInput {
+                        width: 35px;
+                        height: 36px;
+
+                        position: absolute;
+                        bottom: 0px;
+                        right: 14px;
+                        cursor: pointer;
+                    }
+                }
+
+                .erro {
+                    color: red;
+                    font-size: 12px;
+                    position: absolute;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
 }
-.ladoVerde img{
-    height: 368px;
-}
 
-
-.ladoForm{
-    padding: 20px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 45px;
-}
-
-.ladoForm label{
-    color: var(--green-1);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.firstLabel{
-    font-size: 40px;
-    padding-bottom: 20px;
-}
-
-.ladoForm button{
+.ladoForm button {
     background: var(--green-1);
     width: 405px;
     justify-content: center;
-    
+
 }
 
-.loginForm{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.formItens{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-
-    input {
-        height: 3rem;
-        width: 21rem;
-
-        align-content: center;
-        border: 0;
-        border-radius: 10px;
-
-        background: var(--white);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-        padding: 0rem 2rem 0rem 2rem;
-        resize: none;
-        font-size: 1rem;
-
-        border: 2px solid transparent; // reserva espaço sem visibilidade
-    }
-    input:focus-visible {
-        border: 2px solid var(--green-1); // agora não aumenta o tamanho
-        outline: transparent;
-    }
-
-    .asterisco {
-        color: red;
-        margin-left: 2px;
-        font-weight: bold;
-    }
-
-
-    .erro {
-        color: red;
-        font-size: 12px;
-        position: absolute;
-        margin-top: 4px;
-    }
-}
-
-.linksLogin{
+.linksLogin {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px; 
-    button{
+    gap: 16px;
+
+    button {
         padding: 0px;
         border-radius: 0px;
         font-size: 16px;
@@ -108,22 +122,22 @@
     }
 }
 
-.labelLogin{
+.labelLogin {
 
     font-weight: bold;
 }
 
-.checkboxLogin{
+.checkboxLogin {
     display: flex;
     gap: 215px;
     align-items: center;
 }
 
-.checkboxLabel{
+.checkboxLabel {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.checkboxLogin input{
+.checkboxLogin input {
     appearance: none;
     height: 30px;
     width: 30px;
@@ -138,14 +152,14 @@
         &::after {
             content: '';
             position: absolute;
-            top: 4px;   
-            left: 9.5px; 
+            top: 4px;
+            left: 9.5px;
             width: 7px;
             height: 12px;
             border: solid white;
             border-width: 0 3px 3px 0;
             transform: rotate(45deg);
             display: block;
-          }
+        }
     }
 }

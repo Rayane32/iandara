@@ -71,11 +71,11 @@
                             resize: none;
                             font-size: 1rem;
 
-                            border: 2px solid transparent;
+                            border: 2px solid transparent; // reserva espaço sem visibilidade
                         }
 
                         input:focus-visible {
-                            border: 2px solid var(--green-1);
+                            border: 2px solid var(--green-1); // agora não aumenta o tamanho
                             outline: transparent;
                         }
 
@@ -90,9 +90,8 @@
                             height: 36px;
 
                             position: absolute;
-                            bottom: 0px;
+                            bottom: 7px;
                             right: 14px;
-                            cursor: pointer;
                         }
                     }
 
