@@ -1,0 +1,40 @@
+.commentBox{
+    color: var(--green-1);
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+
+.commentBox p{
+    margin: 0rem 0rem 1.25rem 0rem;
+}
+.commentApelido{
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.commentApelido span{
+    color: var(--red-1);
+}
+
+.commentBox textarea{
+    background: var(--white);
+    resize: none;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 3rem;
+    width: 21rem;
+    
+
+    font-size: 1rem;
+    align-content: center;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.commentBox textarea:focus-visible{
+    outline: transparent;
+    border: 1px var(--green-1) solid;
+    opacity: 50%;
+
+}
+    
