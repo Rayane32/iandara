@@ -69,6 +69,8 @@ function Login() {
     navigate('/cadastro');
   }
 
+  const [checked, setChecked] = useState(false);
+
   return (
     <main className={styles.boxPrincipal}>
         <div className={styles.ladoVerde}>
@@ -98,6 +100,17 @@ function Login() {
                 {erros.senha && <span className={styles.erro}>{erros.senha}</span>}
             </div>
             </form>
+            <div>
+              <label className="checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  checked={checked}
+                  onChange={() => setChecked(!checked)}
+                />
+                <span className="custom-checkbox"></span>
+                <span className="checkbox-label">Manter-me conectado</span>
+              </label>
+            </div>
             <button type="submit">Entrar</button>
             <div className={styles.linksLogin}>
               <button type="submit" >Esqueceu a senha?</button>
