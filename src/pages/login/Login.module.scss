@@ -1,12 +1,13 @@
 .boxPrincipal {
     display: flex;
     flex-direction: row;
-
+    height: 100vh;
   }
 .ladoVerde{
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background: var(--green-1);
 
     
@@ -24,6 +25,12 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+}
+.ladoForm button{
+    background: var(--green-1);
+    width: 405px;
+    justify-content: center;
+    
 }
 
 .loginForm{
@@ -78,8 +85,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    a{
-        text-decoration: none;
+    gap: 16px; 
+    button{
+        padding: 0px;
+        border-radius: 0px;
+        font-size: 16px;
+        background: transparent;
+        color: var(--green-1);
+        cursor: pointer;
+        font-weight: lighter;
     }
+}
+
+.labelLogin{
+    color: var(--green-1);
+    font-weight: bold;
 }

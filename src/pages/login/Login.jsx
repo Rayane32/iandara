@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import styles from './Login.module.scss';
 
+import { useNavigate } from 'react-router';
+
+
 
 import logoLogin from '../../assets/logoLogin.svg';
 
 function Login() {
+  const navigate = useNavigate()
   const [form, setForm] = useState({
     email: '',
     senha: '',
@@ -61,6 +65,10 @@ function Login() {
     }
   };
 
+  const handleClick = () => {
+    navigate('/cadastro');
+  }
+
   return (
     <main className={styles.boxPrincipal}>
         <div className={styles.ladoVerde}>
@@ -69,7 +77,7 @@ function Login() {
         <div className={styles.ladoForm}>
             <form onSubmit={handleSubmit} className={styles.loginForm}>
             <div className={styles.formItens}>
-                <label>Email:</label>
+                <label className={styles.labelLogin}>Email</label>
                 <input
                 type="text"
                 value={form.email}
@@ -80,7 +88,7 @@ function Login() {
             </div>
 
             <div className={styles.formItens}>
-                <label>Senha:</label>
+                <label className={styles.labelLogin}>Senha</label>
                 <input
                 type="password"
                 value={form.senha}
@@ -92,10 +100,13 @@ function Login() {
             </form>
             <button type="submit">Entrar</button>
             <div className={styles.linksLogin}>
-                <a href="">Esqueceu a senha?</a>
-                <a href="">Cadastrar</a>
+              <button type="submit" >Esqueceu a senha?</button>
+              <button type="submit" onClick={handleClick}>Cadastrar</button>
+                {/*<a href="#" onClick={handleClick}>Esqueceu a senha?</a>
+                <a href="#" onClick={handleClick}>Cadastrar</a>*/}
             </div>
         </div>
+
     </main>
     
   );
