@@ -159,7 +159,6 @@ function Cadastro() {
                     </div>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }
