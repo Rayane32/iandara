@@ -77,9 +77,12 @@ function Login() {
             <img src={logoLogin} alt="" />
         </div>
         <div className={styles.ladoForm}>
+            <div>
+              <label className={styles.firstLabel}> Login </label>
+            </div>
             <form onSubmit={handleSubmit} className={styles.loginForm}>
             <div className={styles.formItens}>
-                <label className={styles.labelLogin}>Email</label>
+                <label className={styles.labelLogin}>E-mail</label>
                 <input
                 type="text"
                 value={form.email}
@@ -101,14 +104,13 @@ function Login() {
             </div>
             </form>
             <div>
-              <label className="checkbox-wrapper">
+              <label className={styles.checkboxLogin}>
                 <input
                   type="checkbox"
                   checked={checked}
                   onChange={() => setChecked(!checked)}
                 />
-                <span className="custom-checkbox"></span>
-                <span className="checkbox-label">Manter-me conectado</span>
+                <span className={styles.checkboxLabel}>Manter-me conectado</span>
               </label>
             </div>
             <button type="submit">Entrar</button>
