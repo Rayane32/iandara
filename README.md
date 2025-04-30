@@ -4,11 +4,23 @@
 ![image](https://github.com/user-attachments/assets/b91fc256-15f0-49a3-92b3-fbfcc07ac43d)
 
 
+![image](https://github.com/user-attachments/assets/040850f6-9c1c-45bd-9869-744123e51524)
+
+- **LINNK DE ACESSO:** https://rayane32.github.io/login
+- **LINNK DE ACESSO AO SCREENCAST:**
+
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
 ![image](https://github.com/user-attachments/assets/ab845ebc-0c0d-4cc4-88b1-c32543c10e16)
-![image](https://github.com/user-attachments/assets/43435b80-6441-4ee6-877f-847912777192)
+**Sprint 01 finalizada em 30/04/25**
+![image](https://github.com/user-attachments/assets/3070b313-10a4-4e74-bcc7-0162a5532e00)
+
 
 - **LINNK DE ACESSO:** https://trello.com/invite/b/66f52220680ce266c87e6362/ATTIeed9ff5fe990e0252c4a20961fc9cdbaF29034CC/iandara
+
+
+![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
+![image](https://github.com/user-attachments/assets/f8bb6823-f548-4e8a-8d6b-cc56f68d9459)
+![Diagrama de atividades](https://github.com/user-attachments/assets/4913b1af-a0d5-45bd-afa4-8c6902760a21)
 
 
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
@@ -123,6 +135,12 @@ IANDARA/
 - Raphael Miranda
 - Rayane Cavalcanti
 - Samuel Araujo
+
+#### **Relato sobre a prática de Programação em Par:**
+
+Durante o desenvolvimento do projeto, utilizamos a Programação em Par de forma pontual, especialmente em tarefas mais complexas que exigiam atenção redobrada. Nessas situações, o trabalho em dupla contribuiu para maior eficiência e qualidade do código. No entanto, não adotamos essa prática de forma contínua, pois percebemos que, com uma equipe de quatro pessoas, limitar o trabalho a duplas poderia restringir a troca de conhecimento entre todos.
+
+Optamos por uma abordagem colaborativa, mantendo uma comunicação constante e aberta entre os integrantes. Sempre que surgiam dúvidas ou decisões importantes, realizávamos discussões em grupo, o que favoreceu a participação coletiva e o aprendizado conjunto. Essa estratégia nos permitiu equilibrar momentos de programação em par com interações mais amplas, tornando o processo mais rico e eficiente.
 
 📌 **IANDARA - Mapeamento e Prevenção de Riscos à Segurança da Mulher** 💜
 
