@@ -4,8 +4,8 @@ import styles from './Edicao.module.scss';
 
 import { Header } from '../../componentes/header/Header';
 
-import EditIcon from "../../assets/edit-icon.svg";
-import LockIcon from "../../assets/lock-icon.png"
+import EditIcon from '../../assets/edit-icon.svg';
+import LockIcon from '../../assets/lock-icon.png';
 
 function Edicao() {
     const navigate = useNavigate()
@@ -22,14 +22,14 @@ function Edicao() {
     });
 
     const mapeadorCampos = {
-        nome: "Nome:",
-        nascimento: "Data de nascimento:",
-        cpf: "CPF:",
-        email: "E-mail:",
-        endereco: "Endereço:",
-        senha: "Senha:",
-        cidade: "Cidade:",
-        confirmarSenha: "Confirmar senha:"
+        nome: 'Nome:',
+        nascimento: 'Data de nascimento:',
+        cpf: 'CPF:',
+        email: 'E-mail:',
+        endereco: 'Endereço:',
+        senha: 'Senha:',
+        cidade: 'Cidade:',
+        confirmarSenha: 'Confirmar senha:'
     }
     const [erros, setErros] = useState({});
 
@@ -83,11 +83,11 @@ function Edicao() {
     };
 
     const camposObrigatorios = [
-        "nome",
-        "cpf",
-        "email",
-        "senha",
-        "confirmarSenha",
+        'nome',
+        'cpf',
+        'email',
+        'senha',
+        'confirmarSenha',
     ];
 
     const renderCampo = (label, campo, type = 'text', index) => (
@@ -101,7 +101,7 @@ function Edicao() {
                     onBlur={() => validarCampo(campo, form[campo])}
                     disabled={campo === 'cpf' || campo === 'nascimento'}
                 />
-                <img src={campo === 'cpf' || campo === 'nascimento' ? LockIcon : EditIcon} alt="" className={styles.iconeInput} />
+                <img src={campo === 'cpf' || campo === 'nascimento' ? LockIcon : EditIcon} alt='' className={styles.iconeInput} />
             </div>
             {erros[campo] && <span className={styles.erro}>{erros[campo]}</span>}
         </div>
@@ -154,7 +154,7 @@ function Edicao() {
                             </div>
 
                             <div className={styles.footerButtons}>
-                                <button type="submit">Salvar</button>
+                                <button type='submit'>Salvar</button>
                             </div>
                         </form>
                     </div>

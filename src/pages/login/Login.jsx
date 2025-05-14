@@ -80,7 +80,7 @@ function Login() {
   return (
     <main className={styles.boxPrincipal}>
       <div className={styles.ladoVerde}>
-        <img src={logoLogin} alt="" />
+        <img src={logoLogin} alt='' />
       </div>
       <div className={styles.ladoForm}>
         <div>
@@ -92,7 +92,7 @@ function Login() {
             <div className={styles.form}>
               <label className={styles.labelLogin}>E-mail</label>
               <input
-                type="text"
+                type='text'
                 value={form.email}
                 onChange={handleChange('email')}
                 onBlur={() => validarCampo('email', form.email)}
@@ -112,7 +112,7 @@ function Login() {
               />
 
               <div className={styles.iconeInput}>
-                <span onClick={() => setMostrarSenha(!mostrarSenha)} className="material-icons">
+                <span onClick={() => setMostrarSenha(!mostrarSenha)} className='material-icons'>
                   {mostrarSenha ? 'visibility_off' : 'visibility'}
                 </span>
               </div>
@@ -125,7 +125,7 @@ function Login() {
         <div>
           <label className={styles.checkboxLogin}>
             <input
-              type="checkbox"
+              type='checkbox'
               checked={checked}
               onChange={() => setChecked(!checked)}
             />

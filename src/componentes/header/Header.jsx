@@ -7,8 +7,8 @@ export function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.imagesLogo}>
-                <img src={iandaraLogo} alt="" />
-                <img src={iandaraLogotipo} alt="" />
+                <img src={iandaraLogo} alt='' />
+                <img src={iandaraLogotipo} alt='' />
             </div>
         </header>
 

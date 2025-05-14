@@ -21,14 +21,14 @@ function Cadastro() {
     const [mostrarSenha, setMostrarSenha] = useState(false);
 
     const mapeadorCampos = {
-        nome: "Nome:",
-        nascimento: "Data de nascimento:",
-        cpf: "CPF:",
-        email: "E-mail:",
-        endereco: "Endereço:",
-        senha: "Senha:",
-        cidade: "Cidade:",
-        confirmarSenha: "Confirmar senha:"
+        nome: 'Nome:',
+        nascimento: 'Data de nascimento:',
+        cpf: 'CPF:',
+        email: 'E-mail:',
+        endereco: 'Endereço:',
+        senha: 'Senha:',
+        cidade: 'Cidade:',
+        confirmarSenha: 'Confirmar senha:'
     }
     const [erros, setErros] = useState({});
 
@@ -83,11 +83,11 @@ function Cadastro() {
     };
 
     const camposObrigatorios = [
-        "nome",
-        "cpf",
-        "email",
-        "senha",
-        "confirmarSenha",
+        'nome',
+        'cpf',
+        'email',
+        'senha',
+        'confirmarSenha',
     ];
 
     const renderCampo = (label, campo, type = 'text', index) => (
