@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './Cadastro.module.scss';
-import { Header } from '../../componentes/header/Header';
+import Header from '../../componentes/header/Header';
 
 import { useNavigate } from 'react-router';
 
@@ -21,14 +21,14 @@ function Cadastro() {
     const [mostrarSenha, setMostrarSenha] = useState(false);
 
     const mapeadorCampos = {
-        nome: "Nome:",
-        nascimento: "Data de nascimento:",
-        cpf: "CPF:",
-        email: "E-mail:",
-        endereco: "Endereço:",
-        senha: "Senha:",
-        cidade: "Cidade:",
-        confirmarSenha: "Confirmar senha:"
+        nome: 'Nome:',
+        nascimento: 'Data de nascimento:',
+        cpf: 'CPF:',
+        email: 'E-mail:',
+        endereco: 'Endereço:',
+        senha: 'Senha:',
+        cidade: 'Cidade:',
+        confirmarSenha: 'Confirmar senha:'
     }
     const [erros, setErros] = useState({});
 
@@ -83,11 +83,11 @@ function Cadastro() {
     };
 
     const camposObrigatorios = [
-        "nome",
-        "cpf",
-        "email",
-        "senha",
-        "confirmarSenha",
+        'nome',
+        'cpf',
+        'email',
+        'senha',
+        'confirmarSenha',
     ];
 
     const renderCampo = (label, campo, type = 'text', index) => (
@@ -147,7 +147,7 @@ function Cadastro() {
         <div>
             <Header />
             <main>
-                <div className={styles.formUser}>
+                <div className={`${styles.formUser} padding-top-header`}>
                     <div className={styles.formUserContent}>
                         <strong>Dados cadastrais</strong>
                         <form onSubmit={handleSubmit} className={styles.box}>

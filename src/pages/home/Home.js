@@ -1,31 +1,30 @@
-// import { NavLink } from 'react-router';
-// import emailjs from "@emailjs/browser";
+import Header from '../../componentes/header/Header';
+import Mapa from '../../componentes/mapa/Mapa';
+import MenuLateral from '../../componentes/menu-lateral/MenuLateral';
+
+import styles from './Home.module.scss';
 
 function Home() {
-  // const sendEmail = () => {
-
-  //   const templateParams = {
-  //     from_name: 'rayane',
-  //     message: 'Primeiro teste',
-  //     email: 'cavalcantirayane722@gmail.com'
-  //   }
-
-  //   //               id do email,   id do template,   objetos que defii, public key
-  //   emailjs.send("service_nr2zexv", "template_oqlw5vf", templateParams, "aXkhGM110364V1kTb")
-  //   .then((response) => {
-  //     console.log("EMAI ENVIADO", response.status, response.text)
-  //     // reset todas os campos
-  //   }, (error) => {
-  //     console.log("error", error)
-  //   })
-  // }
+  
+    const linksMenu = [
+        {
+            titulo: 'HOME',
+            linkPage: ''
+        },
+        {
+            titulo: 'QUEM SOMOS',
+            linkPage: ''
+        }
+    ]
 
   return (
     <div>
-      <h1>TELA HOME IANDARA</h1>
-      {/* <button onClick={sendEmail} type="text">
-        BT
-      </button> */}
+      <Header backGroundColor='greenOne' linksMenu={linksMenu} mostrarPerfil={true}/>
+      <div className={styles.home}>
+        <Mapa/>
+        <MenuLateral/>
+        <div className={styles.barraLateral}/>
+      </div>
      </div>
   );
 }

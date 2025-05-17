@@ -1,0 +1,19 @@
+.MenuLateralContainer {
+    background-color: rgba(255, 255, 255, .7) !important;
+    backdrop-filter: blur(2px) !important;
+
+    position: absolute;
+    top: 0;
+    z-index: 999;
+
+    width: 350px;
+    height: calc(100vh - 4.5rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // padding: 25px;
+
+    gap: 60px;
+}
