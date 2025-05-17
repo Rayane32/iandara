@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './Cadastro.module.scss';
-import { Header } from '../../componentes/header/Header';
+import Header from '../../componentes/header/Header';
 
 import { useNavigate } from 'react-router';
 
@@ -147,7 +147,7 @@ function Cadastro() {
         <div>
             <Header />
             <main>
-                <div className={styles.formUser}>
+                <div className={`${styles.formUser} padding-top-header`}>
                     <div className={styles.formUserContent}>
                         <strong>Dados cadastrais</strong>
                         <form onSubmit={handleSubmit} className={styles.box}>

@@ -1,17 +1,79 @@
-.header{
-    background-color: var(--orange-2);
+.header {
     height: 4.5rem;
     display: flex;
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0px 40px 0px 20px;
+    box-sizing: border-box;
+
+    .acessoIandara {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        span {
+            color: var(--white);
+        }
+
+        .tituloLink {
+            color: var(--white);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: 600;
+
+            &:hover {
+                color: #ECBDB5;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
-.imagesLogo{
+.orangeOne {
+    background-color: var(--orange-1);
+}
+
+.orangeTwo {
+    background-color: var(--orange-2);
+}
+
+.greenOne {
+    background-color: var(--green-1);
+}
+
+.redOne {
+    background-color: var(--red-1);
+}
+
+.pinkOne {
+    background-color: var(--pink-1);
+}
+
+.pinkOne .tituloLink {
+    color: var(--green-1) !important;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--orange-2) !important;
+    }
+}
+
+.imagesLogo {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     padding: 2rem;
 }
-.imagesLogo img{
+
+.imagesLogo img {
     height: 2rem;
-   
+
 }
