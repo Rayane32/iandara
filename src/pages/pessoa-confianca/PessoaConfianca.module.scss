@@ -1,0 +1,145 @@
+.titulo {
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--green-1);
+}
+
+.pessoaConfianca__container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+
+    gap: 40px;
+
+    .formulario__container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+
+        .formulario__content {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+
+            .campos {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    input {
+                        width: 100% !important;
+                    }
+                }
+            }
+
+            .listagemPessoas__container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .adicionarPessoa {
+                    font-weight: 600;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: var(--orange-1);
+                    }
+                }
+
+
+                .listagem {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .linha {
+                        display: flex;
+                        gap: 20px;
+                        width: 100%;
+
+                        .campoListagem {
+                            display: flex;
+                            flex-direction: column;
+                            width: 30%;
+
+                            input {
+                                width: 100%;
+                                font-size: 12px;
+                                padding: 0px 5px;
+                            }
+                        }
+
+                        .operacoes {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 4px;
+
+                            .botoesOperacoes {
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+
+
+                                .editar {
+                                    border-radius: 100px;
+                                    background-color: #51a8df;
+                                    padding: 8px;
+                                    box-sizing: border-box;
+                                    color: white;
+
+                                    &:hover {
+                                        opacity: 0.5;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .excluir {
+                                    border-radius: 100px;
+                                    background-color: rgb(231, 102, 102);
+                                    padding: 8px;
+                                    box-sizing: border-box;
+                                    color: white;
+
+                                    &:hover {
+                                        opacity: 0.5;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .mapa__content {
+        height: 100%;
+        width: 50%;
+
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .btn {
+            background-color: var(--pink-1);
+            color: var(--green-1);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+}

@@ -2,13 +2,20 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import styles from './Edicao.module.scss';
 
-import { Header } from '../../componentes/header/Header';
+import Header from '../../componentes/header/Header';
 
 import EditIcon from '../../assets/edit-icon.svg';
 import LockIcon from '../../assets/lock-icon.png';
 
 function Edicao() {
     const navigate = useNavigate()
+
+    const linksMenu = [
+        {
+            titulo: 'Voltar',
+            linkPage: '/home'
+        }
+    ]
 
     const [form, setForm] = useState({
         nome: 'Ana Clara Silva',
@@ -90,12 +97,12 @@ function Edicao() {
         'confirmarSenha',
     ];
 
-    const renderCampo = (label, campo, type = 'text', index) => (
+    const renderCampo = (label, campo, index) => (
         <div className={styles.formItens} key={index}>
             <div className={styles.form}>
                 <label>{label} {camposObrigatorios.includes(campo) && <span className={styles.asterisco}>*</span>}</label>
                 <input
-                    type={type}
+                    type='text'
                     value={form[campo]}
                     onChange={handleChange(campo)}
                     onBlur={() => validarCampo(campo, form[campo])}
@@ -139,9 +146,9 @@ function Edicao() {
 
     return (
         <div>
-            <Header />
+            <Header linksMenu={linksMenu} />
             <main>
-                <div className={styles.formUser}>
+                <div className={`${styles.formUser} padding-top-header`}>
                     <div className={styles.formUserContent}>
                         <strong>Meus dados</strong>
                         <form onSubmit={handleSubmit} className={styles.box}>

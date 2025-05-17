@@ -1,0 +1,32 @@
+.cardFuncionalidade {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    .imagem {
+        height: 80px;
+        width: 80px;
+        display: flex;
+
+        img {
+            border-radius: 100px;
+            background-color: #ECBDB5;
+
+            padding: 8px;
+            height: 80px;
+            width: 80px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        &:hover {
+            opacity: 0.80;
+            cursor: pointer;
+        }
+    }
+
+    .descricao {
+        color: var(--green-1);
+        font-weight: 700;
+    }
+}
