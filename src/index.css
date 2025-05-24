@@ -94,3 +94,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.toast-message {
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  height: 90px;
+}

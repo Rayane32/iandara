@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import styles from './Edicao.module.scss';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Header from '../../componentes/header/Header';
 
 import EditIcon from '../../assets/edit-icon.svg';
@@ -135,12 +138,19 @@ function Edicao() {
         });
 
         if (!hasErro) {
-            alert('Dados atualizados com sucesso!');
-            navigate('/home');
+            toast.success('Dados atualizados com sucesso!', {
+                position: "top-right"
+            });
+
+            setTimeout(() => {
+                navigate('/home');
+            }, 1500)
         }
 
         if (hasErro) {
-            alert('Preencha os obrigatórios e de forma válida para salvar edições.');
+            toast.warning('Preencha os obrigatórios e de forma válida para salvar edições.', {
+                position: "top-right",
+            });
         }
     };
 
@@ -167,6 +177,7 @@ function Edicao() {
                     </div>
                 </div>
             </main>
+            <ToastContainer />
         </div>
     );
 }
