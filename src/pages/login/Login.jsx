@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import styles from './Login.module.scss';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { useNavigate } from 'react-router';
 
 import logoLogin from '../../assets/logoLogin.svg';
@@ -63,10 +66,18 @@ function Login() {
     });
 
     if (!hasErro) {
-      alert('Login efetuado com sucesso!');
-      navigate('/home');
+      toast.success('Login efetuado com sucesso!', {
+        position: "top-right"
+      });
+
+      setTimeout(() => {
+        navigate('/home');
+      }, 1500)
+
     } else {
-      alert('Preencha os campos corretamente.');
+      toast.warning('Preencha os campos corretamente.', {
+        position: "top-right"
+      });
     }
 
   };
@@ -140,6 +151,7 @@ function Login() {
         </div>
       </div>
 
+      <ToastContainer />
     </main>
 
   );
