@@ -1,0 +1,110 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 10px;
+    width: 750px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    background-color: #e6b1ab;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagesLogo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.image {
+    width: 102px;
+    height: 32px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.chatBox {
+    padding: 20px;
+}
+
+.messageAurisContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.messageAuris {
+    background-color: #143f3d;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.messageUserContainer {
+    margin-left: auto;
+    display: flex;
+
+    flex-direction: column;
+    width: fit-content;
+    gap: 5px;
+}
+
+.messageUser {
+    background-color: #e6b1ab;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.inputArea {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.inputArea input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.inputArea button {
+    padding: 8px 16px;
+    background-color: #143f3d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
