@@ -1,25 +1,4 @@
 .mapContainer {
     overflow: hidden;
     max-height: 100vh;
-
-
-}
-
-.leaflet-popup-content-wrapper,
-.leaflet-popup-tip {
-    /* background: rgba(255, 255, 255, 0.7) !important; */
-    background-color: rgba(236, 189, 181, 0.7);
-    opacity: 5;
-    color: #333;
-    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
-    font-weight: 800;
-
-    textarea {
-        background-color: unset;
-        border: 0px;
-        color: black;
-        width: 206px;
-        height: 13px;
-        outline: unset;
-    }
 }

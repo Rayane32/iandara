@@ -1,6 +1,6 @@
 import L from 'leaflet';
 import React, { useRef, useState, useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents, ZoomControl } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 import styles from './Mapa.module.scss';
@@ -23,6 +23,7 @@ const AddMarkerOnClick = ({ addMarker }) => {
                 lng: e.latlng.lng,
                 text: ''
             };
+            console.log('newMarker', newMarker);
             addMarker(newMarker);
         }
     });
@@ -31,8 +32,14 @@ const AddMarkerOnClick = ({ addMarker }) => {
 
 const Mapa = () => {
     const [markers, setMarkers] = useState([
+        {
+            "id": 1748126287111,
+            "lat": -8.063127339232421,
+            "lng": -34.87108826637269,
+            "text": ""
+        },
         { id: 1, lat: -8.0675, lng: -34.8786, text: 'Ponto de interesse 1' },
-        { id: 2, lat: -8.05, lng: -34.9, text: 'Ponto de interesse 2' }
+        { id: 2, lat: -8.05, lng: -34.9, text: 'Ponto de interesse 2' },
     ]);
 
     const popupRefs = useRef({});
@@ -53,15 +60,16 @@ const Mapa = () => {
         setMarkers((prev) => prev.filter((marker) => marker.id !== idToRemove));
     };
 
-    const latitude = -8.067574341736956;
-    const longitude = -34.87867950272808;
+    const latitude = -8.063242902571908;
+    const longitude = -34.877901077270515;
 
     return (
         <div className={styles.mapContainer}>
             <MapContainer
                 center={[latitude, longitude]}
-                zoom={13}
+                zoom={16}
                 style={{ height: '100vh', width: '100vw' }}
+                zoomControl={false}
             >
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -69,6 +77,8 @@ const Mapa = () => {
                 />
 
                 <AddMarkerOnClick addMarker={addMarker} />
+
+                <ZoomControl position="bottomright" />
 
                 {markers.map((marker) => (
                     <Marker

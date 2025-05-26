@@ -1,0 +1,52 @@
+.BotoesContainer {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    z-index: 9999;
+}
+
+.localizacao {
+    padding: 10px 40px;
+    background-color: rgba(236, 189, 181, 0.9);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--green-1);
+    font-weight: 600;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.icon {
+    padding: 10px;
+    background-color: rgba(236, 189, 181, 0.9);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.sos {
+    background-color: #DE2000 !important;
+
+    span {
+        color: var(--white) !important;
+        font-weight: 600;
+    }
+}
