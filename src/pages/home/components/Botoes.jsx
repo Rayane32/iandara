@@ -1,6 +1,6 @@
 import styles from './Botoes.module.scss';
 
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Botoes = () => {
@@ -21,8 +21,6 @@ const Botoes = () => {
             <div onClick={click} className={`${styles.icon} ${styles.sos}`}>
                 <span>SOS</span>
             </div>
-
-            <ToastContainer />
         </div>
     );
 };

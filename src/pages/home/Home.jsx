@@ -6,6 +6,8 @@ import ModalAuris from './components/ModalAuris';
 import Botoes from './components/Botoes';
 
 import styles from './Home.module.scss';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,10 +24,12 @@ function Home() {
         <Mapa />
         <MenuLateral onOpenModalAuris={() => setIsModalOpen(true)} />
         <div className={styles.barraLateral} />
-        <Botoes/>
+        <Botoes />
       </div>
 
       <ModalAuris isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
+      <ToastContainer />
     </div>
   );
 }

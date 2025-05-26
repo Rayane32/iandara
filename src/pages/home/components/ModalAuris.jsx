@@ -1,26 +1,31 @@
+import { useEffect } from 'react';
 import styles from './ModalAuris.module.scss';
 import { IoClose } from "react-icons/io5";
 
 import iandaraLogo from '../../../assets/iandaraLogo.svg';
-import iandaraLogotipoVerde from '../../../assets/iandaraLogotipoVerde.png'
+import iandaraLogotipoVerde from '../../../assets/iandaraLogotipoVerde.png';
 
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function ModalAuris({ isOpen, onClose }) {
-    if (!isOpen) return null;
+    useEffect(() => {
+        if (isOpen) {
+            toast.warning('Funcionalidade em construção! Em breve disponível em sistema.', {
+                position: "top-right"
+            });
+        }
+    }, [isOpen]);
 
-    toast.warning('Funcionalidade em construção! Em breve disponível em sistema.', {
-        position: "top-right"
-    });
+    if (!isOpen) return null;
 
     return (
         <div className={`${styles.overlay} padding-top-header`}>
             <div className={styles.modal}>
                 <div className={styles.header}>
                     <div className={styles.imagesLogo}>
-                        <img src={iandaraLogo} alt="" className={styles.logo} />
-                        <img src={iandaraLogotipoVerde} alt="" className={styles.image} />
+                        <img src={iandaraLogo} alt="Logo Iandara" className={styles.logo} />
+                        <img src={iandaraLogotipoVerde} alt="Logotipo Iandara" className={styles.image} />
                     </div>
                     <button onClick={onClose} className={styles.closeButton}>
                         <IoClose size={24} />
@@ -59,8 +64,6 @@ function ModalAuris({ isOpen, onClose }) {
                     </div>
                 </div>
             </div>
-
-            <ToastContainer />
         </div>
     );
 }
