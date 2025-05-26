@@ -13,9 +13,11 @@
     "projeto-teste": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
     "react-leaflet": "^5.0.0",
     "react-router": "^7.3.0",
     "react-scripts": "5.0.1",
+    "react-toastify": "^11.0.5",
     "tslib": "^2.8.1",
     "web-vitals": "^2.1.4"
   },

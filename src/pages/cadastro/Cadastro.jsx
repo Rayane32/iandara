@@ -1,8 +1,11 @@
 import { useState } from 'react';
-import styles from './Cadastro.module.scss';
-import Header from '../../componentes/header/Header';
-
 import { useNavigate } from 'react-router';
+import styles from './Cadastro.module.scss';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import Header from '../../componentes/header/Header';
 
 function Cadastro() {
     const navigate = useNavigate()
@@ -130,12 +133,19 @@ function Cadastro() {
         });
 
         if (!hasErro) {
-            alert('Formulário enviado com sucesso!');
-            navigate('/home');
+            toast.success('Formulário enviado com sucesso!', {
+                position: "top-right"
+            });
+
+            setTimeout(() => {
+                navigate('/home');
+            }, 1500)
         }
 
         if (hasErro) {
-            alert('Preencha os obrigatórios e de forma válida.');
+            toast.error('Preencha os campos obrigatórios e de forma válida.', {
+                position: "top-right"
+            });
         }
     };
 
@@ -171,6 +181,7 @@ function Cadastro() {
                     </div>
                 </div>
             </main>
+            <ToastContainer />
         </div>
     );
 }
