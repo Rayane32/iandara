@@ -18,10 +18,10 @@ const IntroducaoIandara = () => {
                 <img src={iandaraLogoTipoLaranja} alt="" className={styles.logoTipo} />
 
                 <span className={styles.titulo}>INOVAÇÃO FEITA PARA PROTEGER QUEM MOVE O MUNDO</span>
-                <span>Iandara é uma plataforma digital que combina inteligência artificial, geolocalização e redes de apoio para fornecer soluções eficazes de segurança feminina. Seu nome, inspirado na força e na resistência das mulheres, simboliza proteção e solidariedade.</span>
+                <span className={styles.descricao}>Iandara é uma plataforma digital que combina inteligência artificial, geolocalização e redes de apoio para fornecer soluções eficazes de segurança feminina. Seu nome, inspirado na força e na resistência das mulheres, simboliza proteção e solidariedade.</span>
 
                 <div className={styles.buttonsSection}>
-                    <button >Saiba mais</button>
+                    <button onClick={() => goTo('/home')} >Conheça nosso sistema</button>
                     <button onClick={() => goTo('/login')}>Entrar</button>
                     <button onClick={() => goTo('/cadastro')}>Cadastrar</button>
                 </div>
@@ -30,7 +30,7 @@ const IntroducaoIandara = () => {
             <div className={styles.logoSection}>
                 <img src={iandaraLogo} alt='' className={styles.logo} />
             </div>
-        </div>
+        </div >
     )
 }
 

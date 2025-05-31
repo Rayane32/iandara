@@ -13,8 +13,8 @@ function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const linksMenu = [
-    { titulo: 'HOME', linkPage: '' },
-    { titulo: 'QUEM SOMOS', linkPage: '' }
+    { titulo: 'HOME', linkPage: '/home' },
+    { titulo: 'QUEM SOMOS', linkPage: '/sobre' }
   ];
 
   return (
