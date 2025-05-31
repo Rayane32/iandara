@@ -1,0 +1,14 @@
+.Footer {
+    min-height: 72px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--orange-1);
+    width: 100%;
+    justify-content: center;
+
+    span {
+        color: white !important;
+    }
+}

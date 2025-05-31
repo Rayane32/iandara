@@ -1,6 +1,7 @@
 import styles from './MenuLateral.module.scss'
 
 import CardFuncionalidade from '../CardFuncionalidade/CardFuncionalidade';
+import { toast } from 'react-toastify';
 
 import userIcon from '../../assets/user.png';
 import aurisIcon from '../../assets/auris.png';
@@ -25,7 +26,9 @@ const MenuLateral = ({ onOpenModalAuris }) => {
             titulo: 'Armazenamento seguro',
             imagem: uploadIcon,
             linkPage: '',
-            action: () => { }
+            action: () => toast.warning('Funcionalidade em construção! Em breve disponível em sistema.', {
+                position: "top-right"
+            })
         },
     ]
 

@@ -30,7 +30,7 @@ const Funcionalidades = () => {
     return (
         <div>
             <div className={styles.titulo}>
-                <span className={styles.titulo}>Funcionalidades</span>
+                <span className={styles.titulo}>FUNCIONALIDADES</span>
             </div>
 
             <div className={styles.FuncionalidadesSection}>

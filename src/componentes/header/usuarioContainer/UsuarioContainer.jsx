@@ -14,7 +14,7 @@ const UsuarioContainer = () => {
 
     return (
         <div className={styles.usuarioContainer}>
-            <span className={styles.nomeUsuario}>CLARA MARIA</span>
+            <span className={styles.nomeUsuario}>ANA CLARA</span>
             <div
                 className={styles.avatarWrapper}
                 onClick={() => setDropdownOpen(!dropdownOpen)}
