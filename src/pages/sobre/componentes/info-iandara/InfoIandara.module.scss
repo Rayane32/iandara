@@ -1,0 +1,35 @@
+.InfoNameSection {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    text-align: center;
+
+    .title {
+        font-size: 30px;
+        font-weight: 600;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color: var(--green-1);
+    }
+
+    .InfoNameDescription {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .imagesGroup {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            img {
+                width: 250px;
+            }
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
