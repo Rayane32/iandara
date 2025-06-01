@@ -4,6 +4,14 @@
     color: var(--green-1);
 }
 
+.erro {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 4px;
+    bottom: -23px;
+}
+
 .pessoaConfianca__container {
     display: flex;
     justify-content: center;
@@ -26,12 +34,13 @@
             .campos {
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
+                gap: 30px;
 
                 .item {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
+                    position: relative;
 
                     input {
                         width: 100% !important;
