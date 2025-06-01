@@ -6,11 +6,16 @@
 
 ![image](https://github.com/user-attachments/assets/040850f6-9c1c-45bd-9869-744123e51524)
 
-- **LINNK DE ACESSO:** https://iandara.vercel.app/login
+- **LINNK DE ACESSO:** https://iandara.vercel.app/sobre
 - **LINNK DE ACESSO AO SCREENCAST:** https://youtu.be/tyl7EzZdLpM
 
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
 ![image](https://github.com/user-attachments/assets/ab845ebc-0c0d-4cc4-88b1-c32543c10e16)
+
+**Sprint 02 finalizada em 01/06/25**
+![image](https://github.com/user-attachments/assets/522c648e-7bef-4c66-9ede-ee1630caee7e)
+
+
 **Sprint 01 finalizada em 30/04/25**
 ![image](https://github.com/user-attachments/assets/3070b313-10a4-4e74-bcc7-0162a5532e00)
 
@@ -25,6 +30,11 @@
 
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
 ![image](https://github.com/user-attachments/assets/f1f384cd-d382-44a0-9b7b-fe2968962c5a)
+
+**Sobre**
+![image](https://github.com/user-attachments/assets/41a645cc-ed0e-403a-9240-73f92a6601ff)
+- **Figma:** https://www.figma.com/design/ReCt8zS45yJHppjN9yJEBl/IANDARA?node-id=32-4&t=wjeYUFUjbKIXTZ7m-0
+- **HU Trello:** https://trello.com/c/m9aCLG8U/64-hu-11-criar-tela-inicial
 
 **Login**
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
@@ -45,8 +55,7 @@
 - **HU Trello:** https://trello.com/c/YX73J3m6
 
 **Home Iandara**
-![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
-![image](https://github.com/user-attachments/assets/78b8a7b7-72f3-4ecf-b22a-57dfd413cc8c)
+![image](https://github.com/user-attachments/assets/e17b3174-9a55-4368-976f-47f6590eb7e6)
 - **Figma:** https://www.figma.com/design/ReCt8zS45yJHppjN9yJEBl/IANDARA?node-id=1-50&p=f&t=hdjfINt1CtaW3vHs-0
 #### **HUs Relacionadas Trello:** 
 - **HU** https://trello.com/c/GruPd9N1
@@ -94,25 +103,33 @@ O projeto será executado em `http://localhost:3000/`.
 
 ```
 IANDARA/
-│── node_modules/          # Dependências do projeto
-│── public/                # Arquivos estáticos
-│── src/                   # Código-fonte do projeto
-│   │── assets/            # Imagens e ícones
-│   │── components/        # Componentes reutilizáveis
-│   │   ├── footer/
+│── node_modules/              # Dependências do projeto
+│── public/                    # Arquivos estáticos públicos (favicon, index.html, etc.)
+│── src/                       # Código-fonte do projeto
+│   │── assets/                # Imagens, ícones e arquivos de mídia
+│   │── components/            # Componentes reutilizáveis
+│   │   ├── CaixaTextoCadastro/
+│   │   ├── card-funcionalidade/
+│   │   ├── CardFuncionalidade/
+│   │   ├── Footer/
 │   │   ├── header/
-│   │── pages/             # Páginas principais
-│   │   ├── home/
-│   │   ├── login-page/
-│   │   │   ├── components/
-│   │   │   ├── login-page.css
-│   │   │   ├── index.js
-│   │── routes/            # Configuração de rotas
+│   │   ├── mapa/
+│   │   ├── menu-lateral/
+│   │── pages/                 # Páginas principais da aplicação
+│   │   ├── cadastro/              # Página de cadastro de usuária
+│   │   ├── edicao-usuario/        # Página de edição de dados da usuária
+│   │   ├── home/                  # Tela inicial do sistema
+│   │   ├── login/                 # Página de login
+│   │   ├── pessoa-confianca/     # Cadastro e listagem de pessoas de confiança
+│   │   ├── sobre/                 # Página "Sobre o Projeto"
+│   │── routes/                # Arquivo de rotas e controle de navegação
 │   │   ├── route.js
-│   │── index.js           # Ponto de entrada do React
-│   │── index.css          # Estilos globais
-│── package.json          # Dependências e scripts do projeto
-│── README.md             # Documentação do projeto
+│   │── index.js               # Ponto de entrada do React
+│   │── index.css              # Estilos globais
+│── .gitignore                # Arquivos e pastas ignorados pelo Git
+│── package-lock.json         # Lockfile de dependências
+│── package.json              # Metadados e scripts do projeto
+│── README.md                 # Documentação do projeto
 ```
 
 
