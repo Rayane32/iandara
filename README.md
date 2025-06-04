@@ -7,14 +7,17 @@
 ![image](https://github.com/user-attachments/assets/040850f6-9c1c-45bd-9869-744123e51524)
 
 - **LINNK DE ACESSO:** https://iandara.vercel.app/sobre
-- **LINNK DE ACESSO AO SCREENCAST:** https://youtu.be/tyl7EzZdLpM
+- **LINNK DE ACESSO AO SCREENCAST - Sprint 1:** https://youtu.be/tyl7EzZdLpM
+- **LINNK DE ACESSO AO SCREENCAST - Sprint 3:** https://drive.google.com/file/d/11XQds3UKs1ZEcylTVWUY6MsaxTzvPWPs/view?usp=sharing
 
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
 ![image](https://github.com/user-attachments/assets/ab845ebc-0c0d-4cc4-88b1-c32543c10e16)
 
-**Sprint 02 finalizada em 01/06/25**
-![image](https://github.com/user-attachments/assets/522c648e-7bef-4c66-9ede-ee1630caee7e)
+**Sprint 03 finalizada em 01/06/25**
+![image](https://github.com/user-attachments/assets/89e9c6c5-5504-4570-90a0-48551484fcf4)
 
+**Sprint 02 finalizada em 15/05/25**
+![image](https://github.com/user-attachments/assets/4ac7fe4a-9f2d-47d3-89a8-1a32bcafe840)
 
 **Sprint 01 finalizada em 30/04/25**
 ![image](https://github.com/user-attachments/assets/3070b313-10a4-4e74-bcc7-0162a5532e00)
@@ -72,6 +75,11 @@
 - **HU Trello:** https://trello.com/c/ESk66XfD
 - **HU Trello:** https://trello.com/c/ectS0g37
 
+
+### **Issue/bug tracker**🐞🐞🐞
+![image](https://github.com/user-attachments/assets/d14b2de0-1992-490b-9dc2-bdfe0cbd0824)
+- RESOLVIDOS em Spint 3
+- **Link acesso**: https://trello.com/c/prnR8Y4o   |  https://trello.com/c/Fq13Us4Q
 
 
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
