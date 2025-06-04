@@ -6,9 +6,9 @@
 
 ![image](https://github.com/user-attachments/assets/040850f6-9c1c-45bd-9869-744123e51524)
 
-- **LINNK DE ACESSO:** https://iandara.vercel.app/sobre
-- **LINNK DE ACESSO AO SCREENCAST - Sprint 1:** https://youtu.be/tyl7EzZdLpM
-- **LINNK DE ACESSO AO SCREENCAST - Sprint 3:** https://drive.google.com/file/d/11XQds3UKs1ZEcylTVWUY6MsaxTzvPWPs/view?usp=sharing
+- **LINK DE ACESSO:** https://iandara.vercel.app/sobre
+- **LINK DE ACESSO AO SCREENCAST - Sprint 1:** https://youtu.be/tyl7EzZdLpM
+- **LINK DE ACESSO AO SCREENCAST - Sprint 3:** https://drive.google.com/file/d/11XQds3UKs1ZEcylTVWUY6MsaxTzvPWPs/view?usp=sharing
 
 ![image](https://github.com/user-attachments/assets/357b6a85-860c-4f50-b9f7-5483dc7f9602)
 ![image](https://github.com/user-attachments/assets/ab845ebc-0c0d-4cc4-88b1-c32543c10e16)
